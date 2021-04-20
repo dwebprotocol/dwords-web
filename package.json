@@ -1,0 +1,58 @@
+{
+    "name": "dwords-web",
+    "version": "0.0.1",
+    "description": "dWeb-based dictionary app that utilizes dTrees.",
+    "main": "main.js",
+    "scripts": {
+      "development": "nodemon",
+      "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+      "start": "NODE_ENV=production node ./dist/server.generated.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dwebprotocol/dwords-web.git"
+    },
+    "keywords": [
+      "dwords",
+      "distributed",
+      "dictionary",
+      "dweb",
+      "dtree"
+    ],
+    "author": "Jared Rice Sr. <jared@peepsx.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/dwebprotocol/dwords-web/issues"
+    },
+    "homepage": "https://dwords.network",
+    "dependencies": {
+      "@hot-loader/react-dom": "latest",
+      "@material-ui/styles": "latest",
+      "@material-ui/core": "latest",
+      "body-parser": "latest",
+      "compression": "latest",
+      "cors": "latest",
+      "dswarm-web": "latest",
+      "dweb-sdk": "latest",
+      "dwebtree": "latest",
+      "express": "latest",
+      "graceful-fs": "latest",
+      "helmet": "latest",
+      "react": "latest",
+      "react-dom": "latest",
+      "react-hot-loader": "latest",
+      "react-router-dom": "latest"
+    },
+    "devDependencies": {
+      "@babel/core": "latest",
+      "@babel/preset-env": "latest",
+      "@babel/preset-react": "latest",
+      "babel-loader": "latest",
+      "nodemon": "latest",
+      "webpack": "latest",
+      "webpack-cli": "latest",
+      "webpack-dev-middleware": "latest",
+      "webpack-hot-middleware": "latest",
+      "webpack-node-externals": "latest"
+    }
+  }

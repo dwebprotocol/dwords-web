@@ -9,10 +9,17 @@ const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <MainRouter/>
+        <MainRouter />
       </ThemeProvider>
     </BrowserRouter>
   )
 }
+
+React.useEffect( () => {
+  const jssStyles = document.querySelector('#jss-server-side')
+  if (jssStyles) {
+    jssStyles.parentNode.removeChild(jssStyles)
+  }
+}, [])
 
 export default hot(module) (App)
