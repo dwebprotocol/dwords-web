@@ -1,5 +1,5 @@
-const path = require('path')
 const webpack = require('webpack')
+const path = require('path')
 const CURRENT_WORKING_DIRECTORY = process.cwd()
 
 const config = {
@@ -31,10 +31,13 @@ const config = {
   resolve: {
     alias: {
       'dswarm': 'dswarm-web',
-      'fs': 'graceful-web',
+      'fs': 'graceful-fs',
       'react-dom': '@hot-loader/react-dom',
       'util': './node_modules/util/util.js'
     }
+  },
+  experiments: {
+    topLevelAwait: true
   }
 }
 

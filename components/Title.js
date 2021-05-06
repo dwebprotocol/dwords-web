@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStyles } from './../hooks/useStyles'
+import  useStyles  from './../hooks/useStyles'
 import Typography from '@material-ui/core/Typography'
 
 export default function Title (props) {

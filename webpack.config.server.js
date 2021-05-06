@@ -1,5 +1,5 @@
-const path = require('path')
 const webpack = require('webpack')
+const path = require('path')
 const CURRENT_WORKING_DIR = process.cwd()
 const nodeExternals = require('webpack-node-externals')
 
@@ -14,7 +14,7 @@ const config = {
     libraryTarget: "commonjs2"
   },
   externals: [nodeExternals()],
-  modules: {
+  module: {
     rules: [
       {
         test: /\.js$/,
@@ -22,7 +22,11 @@ const config = {
         use: ['babel-loader']
       }
     ]
+  },
+  experiments: {
+    topLevelAwait: true
   }
+
 }
 
 module.exports = config

@@ -1,4 +1,4 @@
-import { getDefinition } from './getDefinition'
+import { getDefinition } from '../util/getDefinition'
 
 export async function serveDefinition (word) {
   await getDefinition(word)

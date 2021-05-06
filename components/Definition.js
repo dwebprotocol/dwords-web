@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Typography from '@material-ui/core/Typography'
 import { serveDefinition } from './../helpers/serveDefinition'
 
-export default function Definition (props) {
+export default async function Definition (props) {
   const [word, setWord] = useState([])
   const [definition, setDefinition] = useState([])
 

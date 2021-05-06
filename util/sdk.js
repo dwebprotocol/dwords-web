@@ -27,7 +27,7 @@ const {
     }
   })
 
-export default {
+export {
   DDatabase,
   DDrive,
   resolveName,
